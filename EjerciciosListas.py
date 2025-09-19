@@ -35,6 +35,4 @@ for p in palabras:
     if len(p)>5:
         ListaP2.append(p)
 
-print(f"Las palabras con más de 5 letras son: {palabras}")
-
-print(f"los animales con mas de 5 letras son: {ListaP2}")
+print(f"Los animales con mas de 5 letras son: {ListaP2}")
