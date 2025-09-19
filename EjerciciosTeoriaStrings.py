@@ -1,4 +1,4 @@
-#### 🔧 Ejercicios (Strings)
+#🔧 Ejercicios (Strings)
 
 #1. Pedir una palabra y mostrarla en mayúsculas, minúsculas y *title case*.
 palabra=input("ingrese una palabra ")
