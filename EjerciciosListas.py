@@ -4,18 +4,18 @@
 notas=[]
 totalnotas=0
 sumarnotas=0
-nota=int(input("ingrese una nota "))
+nota=int(input("Ingrese una nota: "))
 
 while nota!=-1:
     notas.append(nota)
     totalnotas=totalnotas+1
     sumarnotas+=nota
-    nota=int(input("ingrese una nota "))
+    nota=int(input("Ingrese una nota: (termina en -1)"))
 
 print(notas)
 
 prom=sumarnotas/totalnotas
-print(f"el promedio es {prom}")
+print(f"El promedio es: {prom}")
 
 pordebajo=0
 
@@ -24,7 +24,7 @@ for n in range(totalnotas):
         print(n)
         pordebajo+=1
 
-print(f"la cantidad de notas por debajo del promedio son {pordebajo}")
+print(f"La cantidad de notas por debajo del promedio son: {pordebajo}")
 
 #12. Dada una lista de palabras, construir otra con las que tengan **más de 5** letras.
 
@@ -35,6 +35,6 @@ for p in palabras:
     if len(p)>5:
         ListaP2.append(p)
 
-print(palabras)
+print(f"Las palabras con más de 5 letras son: {palabras}")
 
 print(f"los animales con mas de 5 letras son: {ListaP2}")
