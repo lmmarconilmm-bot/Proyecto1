@@ -16,6 +16,29 @@ es_palindromo(cadena)
 #9. Escribir `contar_vocales(cadena)` que retorne un diccionario con la cuenta de cada vocal.
 
 def contar_vocales(cadena):
+    vocales="aeiou"
+    cuentas = {ch: cadena.lower().count(ch) for ch in vocales}
+    return cuentas
+    
+print(contar_vocales(cadena))
     
 
 #10. Escribir `normalizar_palabras(frase)` que retorne una **lista** de palabras sin signos de puntuación y en minúsculas.
+
+import re
+frase=input("Ingrese una frase: ")
+
+def normalizar_palabras(frase):
+    palabras=frase.split()  
+    resultado=[
+        re.sub(r'[^\wáéíóúüñ]', '', p.lower())
+        for p in palabras if p
+        ]
+    return resultado
+
+print(normalizar_palabras(frase))  
+
+
+
+
+
